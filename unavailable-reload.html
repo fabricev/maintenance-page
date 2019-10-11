@@ -2,6 +2,27 @@
 	<head>
 		<title>Service under maintenance</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<script>
+			var HttpClient = function() {
+				this.checkUrl = function(aUrl, aCallback) {
+					var anHttpRequest = new XMLHttpRequest();
+					anHttpRequest.onreadystatechange = function() { 
+						if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+							location.reload(); 
+					}
+					anHttpRequest.open( "GET", aUrl, true );
+					anHttpRequest.send( null );
+				}
+			}
+
+			var client = new HttpClient();
+
+			function launchBackgroundServiceCheck() {
+				// Invoke a check on current url every 2s
+				setInterval( function() { client.checkUrl(window.location.href); } , 2000)
+			}
+		</script>
 		<style type="text/css">
 			body {  font-family: Helvetica; height: 100%; color: white; margin:0; padding:0; overflow:hidden; display: flex; justify-content: center; align-items: center;  background-color:#373F42;}
 			svg { filter: url(#focus); position:fixed; top:0; left:0; height:100%; width:100%; background-color:#373F42; z-index: -1}
@@ -11,7 +32,7 @@
 		</style>
 	</head>
 
-    <body>
+    <body onload="launchBackgroundServiceCheck()">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2 -0 20 20">		
 			<filter id="focus">
 				<feGaussianBlur stdDeviation="10.25" />
