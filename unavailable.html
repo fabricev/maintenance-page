@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Service under maintenance</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style type="text/css">
+			body {  font-family: Helvetica; color: white; margin:0; padding:0; overflow:hidden; display: flex; justify-content: center; align-items: center;  background-color:#373F42;}
+			svg { filter: url(#focus); position:fixed; top:0; left:0; height:100%; width:100%; background-color:#373F42; z-index: -1}
+			div { padding: 20px; background-color: #6CACCCBB; text-align: center;}
+			h1 { font-size: 80px; text-shadow: 2px 2px 4px black;}
+			h2 { font-size: 20px; text-shadow: 1px 1px 4px black;}
+		</style>
+	</head>
+
+    <body>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2 -0 20 20">		
+			<filter id="focus">
+				<feGaussianBlur stdDeviation="10.25" />
+			</filter>
+
+			<defs>
+				<path id="gear" d="M0.688,-7.736c-0.485,-0.046 -0.974,-0.046 -1.46,0l-0.335,1.216c-0.432,0.07 -0.856,0.184 -1.265,0.339l-0.899,-0.886c-0.443,0.203 -0.866,0.448 -1.264,0.73l0.317,1.221c-0.338,0.277 -0.649,0.587 -0.926,0.926l-1.22,-0.317c-0.283,0.397 -0.527,0.821 -0.73,1.264l0.885,0.899c-0.155,0.409 -0.269,0.833 -0.339,1.265l-1.216,0.335c-0.046,0.486 -0.046,0.975 0,1.46l1.216,0.336c0.07,0.431 0.184,0.855 0.339,1.265l-0.885,0.898c0.203,0.444 0.447,0.867 0.73,1.264l1.22,-0.317c0.277,0.339 0.588,0.649 0.926,0.926l-0.317,1.221c0.398,0.282 0.821,0.527 1.264,0.73l0.899,-0.885c0.409,0.154 0.833,0.268 1.265,0.339l0.335,1.215c0.486,0.046 0.975,0.046 1.46,0l0.336,-1.215c0.432,-0.071 0.855,-0.185 1.265,-0.339l0.898,0.885c0.444,-0.203 0.867,-0.448 1.265,-0.73l-0.318,-1.221c0.339,-0.277 0.649,-0.587 0.926,-0.926l1.221,0.317c0.283,-0.397 0.527,-0.82 0.73,-1.264l-0.885,-0.898c0.155,-0.41 0.268,-0.834 0.339,-1.265l1.216,-0.336c0.046,-0.485 0.046,-0.974 0,-1.46l-1.216,-0.335c-0.071,-0.432 -0.184,-0.856 -0.339,-1.265l0.885,-0.899c-0.203,-0.443 -0.447,-0.867 -0.73,-1.264l-1.221,0.317c-0.277,-0.339 -0.587,-0.649 -0.926,-0.926l0.318,-1.221c-0.398,-0.282 -0.821,-0.527 -1.265,-0.73l-0.898,0.886c-0.41,-0.155 -0.833,-0.269 -1.265,-0.339l-0.336,-1.216Zm-0.73,6.171c0.857,0 1.552,0.695 1.552,1.551c0,0.856 -0.695,1.551 -1.552,1.551c-0.856,0 -1.551,-0.695 -1.551,-1.551c0,-0.856 0.695,-1.551 1.551,-1.551Z">
+			</defs>
+
+			<!-- Top left shadowed gear -->
+			<use xlink:href="#gear" fill="#1C1F21" transform="translate(-2 2)">
+				<animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" additive="sum" dur="50s" repeatCount="indefinite"></animateTransform> 
+			</use>
+			<use xlink:href="#gear" fill="#6C7B82" transform="translate(-2.4 1.6)">
+				<animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" additive="sum" dur="50s" repeatCount="indefinite"></animateTransform> 
+			</use>
+
+			<!-- Middle right shadowed gear -->
+			<use xlink:href="#gear" fill="#1C1F21" transform="translate(10.2 10.2) rotate(23)" >
+				<animateTransform attributeName="transform" type="rotate" values="0 0 0; -360 0 0" additive="sum" dur="50s" repeatCount="indefinite"></animateTransform>
+			</use>
+			<use xlink:href="#gear" fill="#6C7B82" transform="translate(9.8 9.8) rotate(23)" >
+				<animateTransform attributeName="transform" type="rotate" values="0 0 0; -360 0 0" additive="sum" dur="50s" repeatCount="indefinite"></animateTransform>
+			</use>
+
+			<!-- Bottom left shadowed gear -->
+			<use xlink:href="#gear" fill="#1C1F21" transform="translate(-1 20)"> 
+				<animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" additive="sum" dur="50s" repeatCount="indefinite"></animateTransform>
+			</use>
+			<use xlink:href="#gear" fill="#6C7B82" transform="translate(-1.4 19.6)" >
+				<animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" additive="sum" dur="50s" repeatCount="indefinite"></animateTransform>
+			</use>
+		</svg>
+
+		<div>
+			<h1>Service Unavailable</h1>
+			<h2>Currently under maintenance, please wait</h2>
+		</div>
+	</body>
+</html>
