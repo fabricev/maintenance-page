@@ -1,7 +1,7 @@
 # Simple and neat maintenance page
 50 lines of html for your users while the backend services are unavailable :
 
-<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='https://github.com/fabricev/maintenance-page/blob/master/unavailable.html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+![Service Unavailable](screenshot.png)
 
 # Usage
 Comes in 2 versions:
