@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Unauthorized</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style type="text/css">
+			body {  font-family: Helvetica, Arial, sans-serif; height: 100%; color: white; margin:0; padding:0; overflow:hidden; display: flex; justify-content: center; align-items: center;  background-color:#373F42;}
+			svg { filter: url(#focus); position:fixed; top:0; left:0; height:100%; width:100%; background-color:#373F42; z-index: -1}
+			div { padding: 20px; background-color: #6CACCCBB; text-align: center;}
+			h1 { font-size: 80px; text-shadow: 2px 2px 4px black;}
+			h2 { font-size: 20px; text-shadow: 1px 1px 4px black;}
+		</style>
+	</head>
+
+    <body>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22">		
+			<filter id="focus">
+				<feGaussianBlur stdDeviation="10.25" />
+			</filter>
+
+			<defs>
+				<path id="unauthorized" d="M11.03,0.645C16.546,0.645 21.023,5.122 21.023,10.637C21.023,16.152 16.546,20.63 11.03,20.63C5.515,20.63 1.038,16.152 1.038,10.637C1.038,5.122 5.515,0.645 11.03,0.645ZM4.847,5.884C3.833,7.2 3.23,8.849 3.23,10.637C3.23,14.942 6.725,18.438 11.03,18.438C12.893,18.438 14.605,17.783 15.947,16.692L4.847,5.884ZM17.417,15.114C18.308,13.847 18.831,12.303 18.831,10.637C18.831,6.332 15.336,2.837 11.03,2.837C9.291,2.837 7.683,3.408 6.385,4.372L17.417,15.114Z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+			</defs>
+
+			<!-- Middle right shadowed gear -->
+			<use xlink:href="#unauthorized" style="fill:#1C1F21" transform="translate(0.6 0.6)" >
+			</use>
+			<use xlink:href="#unauthorized" style="fill:#6C7B82" transform="" >
+			</use>
+		</svg>
+
+		<div>
+			<h1>Unauthorized</h1>
+			<h2>Access to this page is granted to authenticated users only</h2>
+		</div>
+	</body>
+</html>
