@@ -5,10 +5,15 @@
 * for resources not found (404)
 
 **Service Unavailable**
+
 ![Service Unavailable](503.png)
+
 **Unauthorized**
+
 ![Unauthorized](401.png)
+
 **Not found**
+
 ![Not Found](404.png)
 
 # Usage
